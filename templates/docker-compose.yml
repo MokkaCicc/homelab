@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  foo:
+    container_name: foo
+    image: ${IMAGE:-foo/bar}
+    restart: unless-stopped
+    environment:
+      FOO: true
+    ports:
+      - 1111:1111
+    volumes:
+      - data:/data
+
+volumes:
+  data: {}
