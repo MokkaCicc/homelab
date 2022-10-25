@@ -7,9 +7,9 @@ services:
     restart: unless-stopped
     environment:
       GENERATE_NEW_SAVE: true
-      SAVE_NAME: $SAVE_NAME
-      USERNAME: $USERNAME
-      TOKEN: $TOKEN
+      SAVE_NAME: ${SAVE_NAME}
+      USERNAME: ${USERNAME}
+      TOKEN: ${TOKEN}
       UPDATE_MODS_ON_START: true
     ports:
       - 27015:27015/tcp
