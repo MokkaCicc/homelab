@@ -6,7 +6,7 @@ services:
     image: ${IMAGE:-itzg/minecraft-server}
     restart: unless-stopped
     environment:
-      EULA: "true"
+      EULA: true
       TYPE: FABRIC
       MODRINTH_PROJECTS: lithium,starlight
       MODRINTH_ALLOWED_VERSION_TYPE: release
