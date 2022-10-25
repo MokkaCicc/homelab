@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  factorio:
+    container_name: factorio
+    image: ${IMAGE:-factoriotools/factorio:stable}
+    restart: unless-stopped
+    environment:
+      GENERATE_NEW_SAVE: true
+      SAVE_NAME: $SAVE_NAME
+      USERNAME: $USERNAME
+      TOKEN: $TOKEN
+      UPDATE_MODS_ON_START: true
+    ports:
+      - 27015:27015/tcp
+      - 34197:34197/udp
+    volumes:
+      - data:/factorio
+
+volumes:
+  data: {}
