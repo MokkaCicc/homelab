@@ -7,7 +7,7 @@
 			"name": "factorio",
 			"description": "vanilla factorio server",
 			"categories": ["Game"],
-			"plateform": "linux",
+			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/factorio/logo.png",
 			"repository": {
 				"url": "https://github.com/MokkaCicc/homelab",
@@ -34,7 +34,7 @@
 			"name": "minecraft",
 			"description": "fabric minecraft server",
 			"categories": ["Game"],
-			"plateform": "linux",
+			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/minecraft/logo.png",
 			"repository": {
 				"url": "https://github.com/MokkaCicc/homelab",
