@@ -1,6 +1,6 @@
 # Minecraft
 ## Additional setup
-- create env variables : `RCON_PASSWORD`, `MOTD`, `OPS`, `WHITELIST`
+None
 
 ## Sources
 

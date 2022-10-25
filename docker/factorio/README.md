@@ -1,6 +1,5 @@
 # Factorio
 ## Additional setup
-- create env variables : `SAVE_NAME`, `USERNAME`, `TOKEN`
 - change `config/server-settings.json`
 - create `config/server-adminlist.json`
 - create `config/server-whitelist.json`

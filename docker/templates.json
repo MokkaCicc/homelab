@@ -1,0 +1,59 @@
+{
+	"version": "2",
+	"templates": [
+		{
+			"type": 2,
+			"title": "factorio",
+			"description": "vanilla factorio server",
+			"categories": ["Game"],
+			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/factorio/logo.png",
+			"repository": {
+				"url": "https://github.com/MokkaCicc/homelab",
+				"stackfile": "docker/factorio/docker-compose.yml"
+			},
+			"env": [
+				{
+					"name": "SAVE_NAME",
+					"label": "The name of the save file"
+				},
+				{
+					"name": "USERNAME",
+					"label": "Your factorio username, used to update mods"
+				},
+				{
+					"name": "TOKEN",
+					"label": "Your factorio token, used to update mods"
+				}
+			]
+		},
+		{
+			"type": 2,
+			"title": "minecraft",
+			"description": "fabric minecraft server",
+			"categories": ["Game"],
+			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/minecraft/logo.png",
+			"repository": {
+				"url": "https://github.com/MokkaCicc/homelab",
+				"stackfile": "docker/minecraft/docker-compose.yml"
+			},
+			"env": [
+				{
+					"name": "RCON_PASSWORD",
+					"label": "The password used to connect to the server with RCON"
+				},
+				{
+					"name": "MOTD",
+					"label": "The server description"
+				},
+				{
+					"name": "OPS",
+					"label": "The list of server admins, comma separated"
+				},
+				{
+					"name": "WHITELIST",
+					"label": "The list of whitelisted users, comma separated"
+				}
+			]
+		}
+	]
+}
