@@ -1,2 +1,2 @@
 # HomeLab
-Collection of docker-compose files for my homelab.
+Collection of docker-compose templates for my portainer homelab.
