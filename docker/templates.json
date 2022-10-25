@@ -4,8 +4,10 @@
 		{
 			"type": 3,
 			"title": "factorio",
+			"name": "factorio",
 			"description": "vanilla factorio server",
 			"categories": ["Game"],
+			"plateform": "linux",
 			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/factorio/logo.png",
 			"repository": {
 				"url": "https://github.com/MokkaCicc/homelab",
@@ -29,8 +31,10 @@
 		{
 			"type": 3,
 			"title": "minecraft",
+			"name": "minecraft",
 			"description": "fabric minecraft server",
 			"categories": ["Game"],
+			"plateform": "linux",
 			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/minecraft/logo.png",
 			"repository": {
 				"url": "https://github.com/MokkaCicc/homelab",
