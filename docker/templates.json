@@ -15,6 +15,10 @@
 			},
 			"env": [
 				{
+					"name": "IP",
+					"label": "The IP address of this service"
+				},
+				{
 					"name": "SAVE_NAME",
 					"label": "The name of the save file"
 				},
@@ -41,6 +45,10 @@
 				"stackfile": "docker/minecraft/docker-compose.yml"
 			},
 			"env": [
+				{
+					"name": "IP",
+					"label": "The IP address of this service"
+				},
 				{
 					"name": "RCON_PASSWORD",
 					"label": "The password used to connect to the server with RCON"

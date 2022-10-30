@@ -7,10 +7,17 @@ services:
     restart: unless-stopped
     environment:
       FOO: true
+    networks:
+      lan:
+        ipv4_address: ${IP}
     ports:
       - 1111:1111
     volumes:
       - data:/data
+
+networks:
+  lan:
+    external: true
 
 volumes:
   data: {}

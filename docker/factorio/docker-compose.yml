@@ -11,11 +11,18 @@ services:
       USERNAME: ${USERNAME}
       TOKEN: ${TOKEN}
       UPDATE_MODS_ON_START: true
+    networks:
+      lan:
+        ipv4_address: ${IP}
     ports:
       - 27015:27015/tcp
       - 34197:34197/udp
     volumes:
       - data:/factorio
+
+networks:
+  lan:
+    external: true
 
 volumes:
   data: {}
