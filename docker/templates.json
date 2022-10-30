@@ -3,6 +3,37 @@
 	"templates": [
 		{
 			"type": 3,
+			"title": "dns",
+			"name": "dns",
+			"description": "technitium dns server",
+			"categories": ["Network"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/dns/logo.png",
+			"repository": {
+				"url": "https://github.com/MokkaCicc/homelab",
+				"stackfile": "docker/dns/docker-compose.yml"
+			},
+			"env": [
+				{
+					"name": "IP",
+					"label": "The IP address of this service"
+				},
+				{
+					"name": "DNS_DOMAIN",
+					"label": "The domain name for accessing this DNS server"
+				},
+				{
+					"name": "PASSWORD",
+					"label": "The web UI password"
+				},
+				{
+					"name": "FORWARDERS",
+					"label": "The list of fallback DNS servers, comma separated"
+				}
+			]
+		},
+		{
+			"type": 3,
 			"title": "factorio",
 			"name": "factorio",
 			"description": "vanilla factorio server",

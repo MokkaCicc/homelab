@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  dns:
+    container_name: dns
+    image: ${IMAGE:-technitium/dns-server}
+    restart: unless-stopped
+    environment:
+      DNS_SERVER_DOMAIN: ${DNS_DOMAIN}
+      DNS_SERVER_ADMIN_PASSWORD: ${PASSWORD}
+      DNS_SERVER_RECURSION: AllowOnlyForPrivateNetworks
+      DNS_SERVER_FORWARDERS: ${FORWARDERS}
+      DNS_SERVER_FORWARDER_PROTOCOL: Tls
+      DNS_SERVER_LOG_USING_LOCAL_TIME: true
+    networks:
+      lan:
+        ipv4_address: ${IP}
+    ports:
+      - 5380:5380/tcp
+      - 53:53/udp
+      - 53:53/tcp
+    volumes:
+      - data:/etc/dns/config
+    sysctls:
+      - net.ipv4.ip_local_port_range=1024 65000
+
+networks:
+  lan:
+    external: true
+
+volumes:
+  data: {}
