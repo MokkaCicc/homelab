@@ -19,6 +19,10 @@
 					"label": "The IP address of this service"
 				},
 				{
+					"name": "MAC",
+					"label": "The MAC address of this service"
+				},
+				{
 					"name": "DNS_DOMAIN",
 					"label": "The domain name for accessing this DNS server"
 				},
@@ -50,6 +54,10 @@
 					"label": "The IP address of this service"
 				},
 				{
+					"name": "MAC",
+					"label": "The MAC address of this service"
+				},
+				{
 					"name": "SAVE_NAME",
 					"label": "The name of the save file"
 				},
@@ -79,6 +87,10 @@
 				{
 					"name": "IP",
 					"label": "The IP address of this service"
+				},
+				{
+					"name": "MAC",
+					"label": "The MAC address of this service"
 				},
 				{
 					"name": "RCON_PASSWORD",

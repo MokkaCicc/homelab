@@ -5,6 +5,7 @@ services:
     container_name: minecraft
     image: ${IMAGE:-itzg/minecraft-server}
     restart: unless-stopped
+    mac_address: ${MAC}
     environment:
       EULA: true
       TYPE: FABRIC

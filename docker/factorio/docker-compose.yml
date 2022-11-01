@@ -5,6 +5,7 @@ services:
     container_name: factorio
     image: ${IMAGE:-factoriotools/factorio:stable}
     restart: unless-stopped
+    mac_address: ${MAC}
     environment:
       GENERATE_NEW_SAVE: true
       SAVE_NAME: ${SAVE_NAME}

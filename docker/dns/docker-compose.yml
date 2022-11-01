@@ -5,6 +5,7 @@ services:
     container_name: dns
     image: ${IMAGE:-technitium/dns-server}
     restart: unless-stopped
+    mac_address: ${MAC}
     environment:
       DNS_SERVER_DOMAIN: ${DNS_DOMAIN}
       DNS_SERVER_ADMIN_PASSWORD: ${PASSWORD}

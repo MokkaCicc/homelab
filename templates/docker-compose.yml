@@ -5,6 +5,7 @@ services:
     container_name: foo
     image: ${IMAGE:-foo/bar}
     restart: unless-stopped
+    mac_address: ${MAC}
     environment:
       FOO: true
     networks:
