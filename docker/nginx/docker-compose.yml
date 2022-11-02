@@ -3,7 +3,7 @@ version: "3"
 services:
   nginx:
     container_name: nginx
-    image: ${IMAGE:-nginx:latest-alpine}
+    image: ${IMAGE:-nginx:alpine}
     restart: unless-stopped
     mac_address: ${MAC}
     networks:
