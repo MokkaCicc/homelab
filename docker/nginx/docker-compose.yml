@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  nginx:
+    container_name: nginx
+    image: ${IMAGE:-nginx:latest-alpine}
+    restart: unless-stopped
+    mac_address: ${MAC}
+    networks:
+      lan:
+        ipv4_address: ${IP}
+    ports:
+      - 80:80
+    volumes:
+      - data:/etc/nginx
+
+networks:
+  lan:
+    external: true
+
+volumes:
+  data: {}

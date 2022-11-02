@@ -109,6 +109,29 @@
 					"label": "The list of whitelisted users, comma separated"
 				}
 			]
+		},
+		{
+			"type": 3,
+			"title": "nginx",
+			"name": "nginx",
+			"description": "nginx reverse proxy",
+			"categories": ["Network"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/nginx/logo.png",
+			"repository": {
+				"url": "https://github.com/MokkaCicc/homelab",
+				"stackfile": "docker/nginx/docker-compose.yml"
+			},
+			"env": [
+				{
+					"name": "IP",
+					"label": "The IP address of this service"
+				},
+				{
+					"name": "MAC",
+					"label": "The MAC address of this service"
+				}
+			]
 		}
 	]
 }
