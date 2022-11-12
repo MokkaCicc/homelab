@@ -93,10 +93,6 @@
 					"label": "The MAC address of this service"
 				},
 				{
-					"name": "RCON_PASSWORD",
-					"label": "The password used to connect to the server with RCON"
-				},
-				{
 					"name": "MOTD",
 					"label": "The server description"
 				},

@@ -13,7 +13,7 @@ services:
       MODRINTH_ALLOWED_VERSION_TYPE: release
       MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES: false
       MEMORY: 1G
-      RCON_PASSWORD: ${RCON_PASSWORD}
+      ENABLE_RCON: false
       MOTD: ${MOTD}
       DIFFICULTY: hard
       ENABLE_WHITELIST: true
