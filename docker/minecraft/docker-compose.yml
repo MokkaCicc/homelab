@@ -9,7 +9,7 @@ services:
     environment:
       EULA: true
       TYPE: FABRIC
-      MODRINTH_PROJECTS: lithium
+      MODRINTH_PROJECTS: lithium,simple-voice-chat
       MODRINTH_ALLOWED_VERSION_TYPE: release
       MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES: false
       MEMORY: 1G
@@ -30,6 +30,7 @@ services:
         ipv4_address: ${IP}
     ports:
       - 25565:25565
+      - 24454:24454/udp
     volumes:
       - data:/data
 
