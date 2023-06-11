@@ -21,7 +21,7 @@ services:
       - 53:53/udp
       - 53:53/tcp
     volumes:
-      - data:/etc/dns/config
+      - data:/etc/dns
     sysctls:
       - net.ipv4.ip_local_port_range=1024 65000
 
