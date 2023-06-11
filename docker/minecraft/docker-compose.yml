@@ -9,7 +9,7 @@ services:
     environment:
       EULA: true
       TYPE: FABRIC
-      MODRINTH_PROJECTS: lithium,starlight
+      MODRINTH_PROJECTS: lithium
       MODRINTH_ALLOWED_VERSION_TYPE: release
       MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES: false
       MEMORY: 1G
