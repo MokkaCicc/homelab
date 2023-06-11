@@ -9,7 +9,7 @@ services:
     environment:
       EULA: true
       TYPE: FABRIC
-      MODRINTH_PROJECTS: lithium,plasmo-voice,pv-addon-sculk,pv-addon-whisper
+      MODRINTH_PROJECTS: lithium,plasmo-voice
       MODRINTH_ALLOWED_VERSION_TYPE: release
       MODRINTH_DOWNLOAD_OPTIONAL_DEPENDENCIES: false
       MEMORY: 1G
