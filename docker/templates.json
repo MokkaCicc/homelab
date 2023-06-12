@@ -136,6 +136,35 @@
           "label": "The MAC address of this service"
         }
       ]
+    },
+    {
+      "type": 3,
+      "title": "transmission",
+      "name": "transmission",
+      "description": "transmission torrent client",
+      "categories": [
+        "Network"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/transmission/logo.png",
+      "repository": {
+        "url": "https://github.com/MokkaCicc/homelab",
+        "stackfile": "docker/transmission/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "IP",
+          "label": "The IP address of this service"
+        },
+        {
+          "name": "MAC",
+          "label": "The MAC address of this service"
+        },
+        {
+          "name": "TZ",
+          "label": "The timezone of the client"
+        }
+      ]
     }
   ]
 }

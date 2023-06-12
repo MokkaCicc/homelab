@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  foo:
+    container_name: foo
+    image: ${IMAGE:-lscr.io/linuxserver/transmission}
+    restart: unless-stopped
+    mac_address: ${MAC}
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: ${TZ}
+    networks:
+      lan:
+        ipv4_address: ${IP}
+    ports:
+      - 9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    volumes:
+      - data:/config
+      - downloads:/downloads
+      - watch:/watch
+
+networks:
+  lan:
+    external: true
+
+volumes:
+  data: {}
