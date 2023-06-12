@@ -3,7 +3,6 @@
 - Configure your zones, entries and blocklists
 
 ## Sources
-
 | Source    | Link                                                                        |
 |-----------|-----------------------------------------------------------------------------|
 | Dockerhub | https://hub.docker.com/r/technitium/dns-server                              |

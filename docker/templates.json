@@ -1,133 +1,141 @@
 {
-	"version": "2",
-	"templates": [
-		{
-			"type": 3,
-			"title": "dns",
-			"name": "dns",
-			"description": "technitium dns server",
-			"categories": ["Network"],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/dns/logo.png",
-			"repository": {
-				"url": "https://github.com/MokkaCicc/homelab",
-				"stackfile": "docker/dns/docker-compose.yml"
-			},
-			"env": [
-				{
-					"name": "IP",
-					"label": "The IP address of this service"
-				},
-				{
-					"name": "MAC",
-					"label": "The MAC address of this service"
-				},
-				{
-					"name": "DNS_DOMAIN",
-					"label": "The domain name for accessing this DNS server"
-				},
-				{
-					"name": "PASSWORD",
-					"label": "The web UI password"
-				},
-				{
-					"name": "FORWARDERS",
-					"label": "The list of fallback DNS servers, comma separated"
-				}
-			]
-		},
-		{
-			"type": 3,
-			"title": "factorio",
-			"name": "factorio",
-			"description": "vanilla factorio server",
-			"categories": ["Game"],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/factorio/logo.png",
-			"repository": {
-				"url": "https://github.com/MokkaCicc/homelab",
-				"stackfile": "docker/factorio/docker-compose.yml"
-			},
-			"env": [
-				{
-					"name": "IP",
-					"label": "The IP address of this service"
-				},
-				{
-					"name": "MAC",
-					"label": "The MAC address of this service"
-				},
-				{
-					"name": "SAVE_NAME",
-					"label": "The name of the save file"
-				},
-				{
-					"name": "USERNAME",
-					"label": "Your factorio username, used to update mods"
-				},
-				{
-					"name": "TOKEN",
-					"label": "Your factorio token, used to update mods"
-				}
-			]
-		},
-		{
-			"type": 3,
-			"title": "minecraft",
-			"name": "minecraft",
-			"description": "fabric minecraft server",
-			"categories": ["Game"],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/minecraft/logo.png",
-			"repository": {
-				"url": "https://github.com/MokkaCicc/homelab",
-				"stackfile": "docker/minecraft/docker-compose.yml"
-			},
-			"env": [
-				{
-					"name": "IP",
-					"label": "The IP address of this service"
-				},
-				{
-					"name": "MAC",
-					"label": "The MAC address of this service"
-				},
-				{
-					"name": "MOTD",
-					"label": "The server description"
-				},
-				{
-					"name": "OPS",
-					"label": "The list of server admins, comma separated"
-				},
-				{
-					"name": "WHITELIST",
-					"label": "The list of whitelisted users, comma separated"
-				}
-			]
-		},
-		{
-			"type": 3,
-			"title": "nginx",
-			"name": "nginx",
-			"description": "nginx reverse proxy",
-			"categories": ["Network"],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/nginx/logo.png",
-			"repository": {
-				"url": "https://github.com/MokkaCicc/homelab",
-				"stackfile": "docker/nginx/docker-compose.yml"
-			},
-			"env": [
-				{
-					"name": "IP",
-					"label": "The IP address of this service"
-				},
-				{
-					"name": "MAC",
-					"label": "The MAC address of this service"
-				}
-			]
-		}
-	]
+  "version": "2",
+  "templates": [
+    {
+      "type": 3,
+      "title": "dns",
+      "name": "dns",
+      "description": "technitium dns server",
+      "categories": [
+        "Network"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/dns/logo.png",
+      "repository": {
+        "url": "https://github.com/MokkaCicc/homelab",
+        "stackfile": "docker/dns/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "IP",
+          "label": "The IP address of this service"
+        },
+        {
+          "name": "MAC",
+          "label": "The MAC address of this service"
+        },
+        {
+          "name": "DNS_DOMAIN",
+          "label": "The domain name for accessing this DNS server"
+        },
+        {
+          "name": "PASSWORD",
+          "label": "The web UI password"
+        },
+        {
+          "name": "FORWARDERS",
+          "label": "The list of fallback DNS servers, comma separated"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "factorio",
+      "name": "factorio",
+      "description": "vanilla factorio server",
+      "categories": [
+        "Game"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/factorio/logo.png",
+      "repository": {
+        "url": "https://github.com/MokkaCicc/homelab",
+        "stackfile": "docker/factorio/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "IP",
+          "label": "The IP address of this service"
+        },
+        {
+          "name": "MAC",
+          "label": "The MAC address of this service"
+        },
+        {
+          "name": "SAVE_NAME",
+          "label": "The name of the save file"
+        },
+        {
+          "name": "USERNAME",
+          "label": "Your factorio username, used to update mods"
+        },
+        {
+          "name": "TOKEN",
+          "label": "Your factorio token, used to update mods"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "minecraft",
+      "name": "minecraft",
+      "description": "fabric minecraft server",
+      "categories": [
+        "Game"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/minecraft/logo.png",
+      "repository": {
+        "url": "https://github.com/MokkaCicc/homelab",
+        "stackfile": "docker/minecraft/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "IP",
+          "label": "The IP address of this service"
+        },
+        {
+          "name": "MAC",
+          "label": "The MAC address of this service"
+        },
+        {
+          "name": "MOTD",
+          "label": "The server description"
+        },
+        {
+          "name": "OPS",
+          "label": "The list of server admins, comma separated"
+        },
+        {
+          "name": "WHITELIST",
+          "label": "The list of whitelisted users, comma separated"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "nginx",
+      "name": "nginx",
+      "description": "nginx reverse proxy",
+      "categories": [
+        "Network"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/nginx/logo.png",
+      "repository": {
+        "url": "https://github.com/MokkaCicc/homelab",
+        "stackfile": "docker/nginx/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "IP",
+          "label": "The IP address of this service"
+        },
+        {
+          "name": "MAC",
+          "label": "The MAC address of this service"
+        }
+      ]
+    }
+  ]
 }

@@ -6,6 +6,9 @@ services:
     image: ${IMAGE:-nginx:alpine}
     restart: unless-stopped
     mac_address: ${MAC}
+    environment:
+      PUID: 1000
+      PGID: 1000
     networks:
       lan:
         ipv4_address: ${IP}

@@ -6,7 +6,6 @@
 - add mods to `mods/`
 
 ## Sources
-
 | Source    | Link                                             |
 |-----------|--------------------------------------------------|
 | Dockerhub | https://hub.docker.com/r/factoriotools/factorio  |

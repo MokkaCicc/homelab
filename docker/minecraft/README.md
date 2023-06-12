@@ -3,7 +3,6 @@
 None
 
 ## Sources
-
 | Source    | Link                                            |
 |-----------|-------------------------------------------------|
 | Dockerhub | https://hub.docker.com/r/itzg/minecraft-server  |

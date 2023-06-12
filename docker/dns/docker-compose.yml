@@ -7,6 +7,8 @@ services:
     restart: unless-stopped
     mac_address: ${MAC}
     environment:
+      PUID: 1000
+      PGID: 1000
       DNS_SERVER_DOMAIN: ${DNS_DOMAIN}
       DNS_SERVER_ADMIN_PASSWORD: ${PASSWORD}
       DNS_SERVER_RECURSION: AllowOnlyForPrivateNetworks

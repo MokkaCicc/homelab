@@ -3,7 +3,6 @@
 - configure nginx
 
 ## Sources
-
 | Source    | Link                                     |
 |-----------|------------------------------------------|
 | Dockerhub | https://hub.docker.com/_/nginx           |
