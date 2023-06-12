@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  foo:
-    container_name: foo
+  transmission:
+    container_name: transmission
     image: ${IMAGE:-lscr.io/linuxserver/transmission}
     restart: unless-stopped
     mac_address: ${MAC}
