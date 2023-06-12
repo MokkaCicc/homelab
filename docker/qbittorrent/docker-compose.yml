@@ -3,7 +3,7 @@ version: "3"
 services:
   qbittorrent:
     container_name: qbittorrent
-    image: ${IMAGE:-llscr.io/linuxserver/qbittorrent}
+    image: ${IMAGE:-lscr.io/linuxserver/qbittorrent}
     restart: unless-stopped
     mac_address: ${MAC}
     environment:
