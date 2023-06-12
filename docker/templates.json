@@ -139,17 +139,17 @@
     },
     {
       "type": 3,
-      "title": "transmission",
-      "name": "transmission",
-      "description": "transmission torrent client",
+      "title": "qbittorrent",
+      "name": "qbittorrent",
+      "description": "qbittorrent torrent client",
       "categories": [
         "Network"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/transmission/logo.png",
+      "logo": "https://raw.githubusercontent.com/MokkaCicc/homelab/main/docker/qbittorrent/logo.png",
       "repository": {
         "url": "https://github.com/MokkaCicc/homelab",
-        "stackfile": "docker/transmission/docker-compose.yml"
+        "stackfile": "docker/qbittorrent/docker-compose.yml"
       },
       "env": [
         {

@@ -1,26 +1,26 @@
 version: "3"
 
 services:
-  transmission:
-    container_name: transmission
-    image: ${IMAGE:-lscr.io/linuxserver/transmission}
+  qbittorrent:
+    container_name: qbittorrent
+    image: ${IMAGE:-llscr.io/linuxserver/qbittorrent}
     restart: unless-stopped
     mac_address: ${MAC}
     environment:
       PUID: 1000
       PGID: 1000
       TZ: ${TZ}
+      WEBUI_PORT: 8080
     networks:
       lan:
         ipv4_address: ${IP}
     ports:
-      - 9091:9091
-      - 51413:51413
-      - 51413:51413/udp
+      - 8080:8080
+      - 6881:6881
+      - 6881:6881/udp
     volumes:
       - data:/config
       - downloads:/downloads
-      - watch:/watch
 
 networks:
   lan:
@@ -29,4 +29,3 @@ networks:
 volumes:
   data: {}
   downloads: {}
-  watch: {}
